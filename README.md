@@ -1,3 +1,3 @@
 # wptheme1
 
-# by Wangohan & SVG
+# by Wangohan & SVG (collaborator)
