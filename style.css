@@ -1,0 +1,312 @@
+/*   
+	Theme Name:        BLANK Theme
+	Theme URI:         https://digwp.com/clubhouse/
+	Description:       A simple basic theme template for WordPress.
+	Author:            Chris Coyier and Jeff Starr
+	Author URI:        https://digwp.com/
+	Donate link:       http://m0n.co/donate
+	Version:           2.0
+	Stable tag:        2.0
+	Requires at least: 4.5
+	Tested up to:      4.7
+	License:           GNU General Public License v3 or later
+	License URI:       http://www.gnu.org/licenses/gpl-3.0.html
+	Tags:              one-column, two-columns, right-sidebar
+	Text Domain:       blank-theme
+*/
+
+@media screen {
+	
+	body { background-color: #eee; }
+	.wrap { box-sizing: border-box; max-width: 960px; margin: 20px auto; padding: 20px; color: #333; background-color: #fff; }
+	
+	a {}
+	a:hover {} 
+	
+	h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+	h1 {}
+	h2 {}
+	h3 {}
+	h4 {}
+	h5 {}
+	h6 {}
+	
+	p {}
+	ul, ol {}
+	
+	pre {}
+	code, tt, var {}
+	
+	abbr, acronym {}
+	
+	blockquote {}
+	blockquote p {}
+	
+	.post {}
+	.entry {}
+	.entry a {}
+	.entry a:hover {}
+	.meta {}
+	.postmetadata {}
+	
+	.nav {}
+	.nav-prev {}
+	.nav-next {}
+	
+	.searchform {}
+	.search-submit {}
+		
+	ol.commentlist { padding: 0; list-style: none; }
+	ol.commentlist li {}
+	ol.commentlist li.alt {}
+	ol.commentlist li.bypostauthor {}
+	ol.commentlist li.byuser {}
+	ol.commentlist li.comment-author-admin {}
+	ol.commentlist li.comment { padding: 20px; border-bottom: 1px dotted #999; }
+	ol.commentlist li.comment div.comment-author {}
+	ol.commentlist li.comment div.vcard {}
+	ol.commentlist li.comment div.vcard cite.fn { font-style: normal; }
+	ol.commentlist li.comment div.vcard cite.fn a.url {}
+	ol.commentlist li.comment div.vcard img.avatar { float:right; margin: 0 0 20px 20px; }
+	ol.commentlist li.comment div.vcard img.photo {}
+	ol.commentlist li.comment div.vcard span.says {}
+	ol.commentlist li.comment div.commentmetadata {}
+	ol.commentlist li.comment div.comment-meta { margin: 10px 0; font-size: 12px; }
+	ol.commentlist li.comment div.comment-meta a { color: #999; }
+	ol.commentlist li.comment p {}
+	ol.commentlist li.comment ul {}
+	ol.commentlist li.comment div.reply { font-size: 12px; font-weight: bold; }
+	ol.commentlist li.comment div.reply a {}
+	ol.commentlist li.comment ul.children { margin: 20px 0 0 0; padding: 0; list-style: none; }
+	ol.commentlist li.comment ul.children li {}
+	ol.commentlist li.comment ul.children li.alt {}
+	ol.commentlist li.comment ul.children li.bypostauthor {}
+	ol.commentlist li.comment ul.children li.byuser {}
+	ol.commentlist li.comment ul.children li.comment {}
+	ol.commentlist li.comment ul.children li.comment-author-admin {}
+	ol.commentlist li.comment ul.children li.depth-2 { margin: 0; border-left: 5px solid #555; }
+	ol.commentlist li.comment ul.children li.depth-3 { margin: 0; border-left: 5px solid #999; }
+	ol.commentlist li.comment ul.children li.depth-4 { margin: 0; border-left: 5px solid #bbb; }
+	ol.commentlist li.comment ul.children li.depth-5 {}
+	ol.commentlist li.comment ul.children li.odd {}
+	ol.commentlist li.even { background-color: #fff; }
+	ol.commentlist li.odd { background-color: #f6f6f6; }
+	ol.commentlist li.parent { border-left: 5px solid #111; }
+	ol.commentlist li.thread-alt {}
+	ol.commentlist li.thread-even {}
+	ol.commentlist li.thread-odd {}
+	
+	form {}
+	label { display: block; }
+	input { display: block; }
+	input[type=text] {}
+	textarea {}
+	
+	.screen-reader-text { position: absolute; left: -9999em; }
+	
+	/* WP Default Styles */
+	
+	.wp-caption {}
+	.wp-caption-text {}
+	.sticky {}
+	.gallery-caption {}
+	.alignright {}
+	.alignleft {}
+	.aligncenter {}
+	
+} /* END screen media */
+
+@media print {
+	
+	body { 
+		width: 100% !important; margin: 0 !important; padding: 0 !important; 
+		line-height: 1.4; word-spacing: 1.1pt; letter-spacing: 0.2pt; 
+		font-family: Garamond, 'Times New Roman', serif; 
+		color: #000; background: none; font-size: 12pt; 
+		}
+	h1,h2,h3,h4,h5,h6 { font-family: Helvetica, Arial, sans-serif; }
+	h1 { font-size: 19pt; }
+	h2 { font-size: 17pt; }
+	h3 { font-size: 15pt; }
+	h4,h5,h6 { font-size:12pt; }
+	code { font: 10pt Courier, monospace; } 
+	blockquote { margin: 1.3em; padding: 1em; }
+	img { display: block; margin: 1em 0; }
+	a img { border: none; }
+	table { margin: 1px; text-align:left; }
+	th { border-bottom: 1px solid #333;  font-weight: bold; }
+	td { border-bottom: 1px solid #333; }
+	th, td { padding: 4px 10px 4px 0; }
+	caption { background-color: #fff; margin-bottom: 2em; text-align: left; }
+	thead { display: table-header-group; }
+	tr { page-break-inside: avoid; } 
+	a { text-decoration: none; color: #000; }
+	#comments { page-break-before: always; }
+	.do-not-print { display: none; }
+	
+} /* END print media */
+@font-face {
+    font-family: PTSans-Regular; 
+    src: url(../fonts/PTSans-Regular.ttf);
+}
+@font-face {
+    font-family: pfagoraslabpro-medium; 
+    src: url(../fonts/pfagoraslabpro-medium.ttf);
+}
+.container {
+    width: 1170px !important;
+}
+header, section {
+    min-width: 1170px !important;
+    overflow: hidden;
+}
+.bg_1 {
+    color: #333;
+    height: 760px;
+    background: url(../img/bg_13.jpg) no-repeat 50% 0px;
+}
+
+.text-hiden {
+    font-size: 0px !important;
+}
+.col {
+    display: inline-block;
+}
+.logo {
+    margin-top: 31px;
+    margin-bottom: 16px;
+}
+.bg_1 img {
+    float: left;
+    display: inline-block;
+}
+.bg_1 b {    
+    font-size: 26px;
+    line-height: 0.615;
+    text-align: left;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 12px;
+    font-family: PTSans-Regular; 
+}
+.bg_1 span {
+    font-size: 13px;
+    margin-left: 5px;
+    display: inline-block;
+    font-family: PTSans-Regular; 
+}
+.bg_1 p {
+    color: #333;
+    font-size: 14px;
+    margin-left: 10px;
+    line-height: 1.5;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.region {
+    vertical-align: bottom;
+    background-color: #ffce23;
+    padding: 2px 15px 2px 15px;
+    border-radius: 15px;
+}
+.button {
+    border-radius: 21px;
+    background-image: -moz-linear-gradient( 90deg, rgb(198,43,43) 0%, rgb(247,90,90) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(198,43,43) 0%, rgb(247,90,90) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(198,43,43) 0%, rgb(247,90,90) 100%);
+    box-shadow: 0 2px 8px rgba(166, 17, 17, 0.4);
+    border-bottom: solid 2px #a61111;
+    cursor: pointer;
+    text-align: left;
+    padding: 12px 0px 0px 20px;
+    margin-top: 15px;
+    width: 266px;
+    line-height: 1.2;
+    height: 42px;
+    color: #fff;
+    font-size: 16px;
+    font-family: PTSans-Regular; 
+}
+.button:hover {
+    background-image: -moz-linear-gradient( 90deg, rgb(193, 36, 36) 0%, rgb(255, 0, 0) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(193, 36, 36) 0%, rgb(255, 0, 0) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(193, 36, 36) 0%, rgb(255, 0, 0) 100%);
+}
+.button > img {
+    margin-right: 15px;
+}
+
+.bg_1 .regions {
+    font-size: 24px;
+    border-radius: 30px;
+    font-weight: 500;
+    padding: 2px 18px 2px 18px;
+    font-family: PTSans-Regular;
+    margin: 30px 8px 0px 15px;
+    background-color: #ffce23;
+}
+
+.button_large {
+    border-radius: 50px;
+    background-image: -moz-linear-gradient( 90deg, rgb(198,43,43) 0%, rgb(247,90,90) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(198,43,43) 0%, rgb(247,90,90) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(198,43,43) 0%, rgb(247,90,90) 100%);
+    box-shadow: 0 7px 10px rgba(166, 17, 17, 0.4);
+    width: 300px;
+    height: 85px;
+    border-bottom: solid 4px #a61111;
+    cursor: pointer;
+    margin: 40px 0px 0px 20px;
+    text-align: center;
+    padding-top: 30px;
+    line-height: 1.2;
+    color: #fff;
+    font-size: 21px;
+    font-family: PTSans-Regular; 
+}
+.button_large:hover {
+    background-image: -moz-linear-gradient( 90deg, rgb(193, 36, 36) 0%, rgb(255, 0, 0) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(193, 36, 36) 0%, rgb(255, 0, 0) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(193, 36, 36) 0%, rgb(255, 0, 0) 100%);
+}
+
+.bg_8 .page_title {
+    margin-top: 70px;
+}
+.page_title span {
+    line-height: 1.7;
+}
+
+
+.bg_12 {
+    height: 230px;
+    background-color: #ffce23;
+    padding-top: 45px;
+}
+.bg_12 p {
+    color: #333;
+    font-size: 14px;
+    margin-left: 10px;
+    line-height: 1.5;
+    margin-top: 5px;
+    display: inline-block;
+}
+.bg_12 span {
+    font-size: 13px;
+    margin-left: 5px;
+    display: inline-block;
+    font-family: PTSans-Regular;
+}
+
+
+
+
+
+
+
+
+
+
+
+
