@@ -15,7 +15,8 @@
         </div>
         <div class="row ancor">
             <a href="#bg_10">
-                <div class="button_large bth_puls">Регистрация</div>
+			<?php custom_registration_function(); ?>
+                <div class="button_large bth_puls" >Регистрация</div>
             </a>
         </div>
     </div>
