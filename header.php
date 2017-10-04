@@ -1,23 +1,21 @@
-<html lang="en">
-<?php wp_head(); ?>
-<header class="bg_1">
-    <div class="container">
-        <div class="row logo">
-            <div class="col-md-6 col-sm-6 text-left">
-                <b>Шапка</b>
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <?php wp_head(); ?>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="row site-logo">
+                <div class="col-sm-4 text-left">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+                </div>
+                <div class="col-sm-8 text-right">
+                    <button type="button" class="btn">Войти</button>
+                    <button type="button" class="btn">Зарегистрироваться</button>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <h1>Плагин регистрации</h1>
-        </div>
-        <div class="row slogan">
-            <p class="col regions">Регистрация пользователей.</p>
-        </div>
-        <div class="row ancor">
-            <a href="#bg_10">
-			<?php custom_registration_function(); ?>
-                <div class="button_large bth_puls" >Регистрация</div>
-            </a>
-        </div>
-    </div>
-</header>
+    </header>

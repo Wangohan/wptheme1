@@ -10,22 +10,48 @@ Version: 1.0.0
 @charset "utf-8";
 /* CSS Document */
 
-
 @font-face {
     font-family: PTSans-Regular; 
-    src: url(../fonts/PTSans-Regular.ttf);
+    src: url(fonts/PTSans-Regular.ttf);
 }
 @font-face {
     font-family: pfagoraslabpro-medium; 
-    src: url(../fonts/pfagoraslabpro-medium.ttf);
+    src: url(fonts/pfagoraslabpro-medium.ttf);
+}
+* {
+    font-family: PTSans-Regular;
+}
+.site-header {
+    height: 140px;
+    background: url(img/bg_2.jpg);
+    font-size: 42px;
+}
+.site-logo {
+    padding-top: 30px;
 }
 .container {
     width: 1170px !important;
 }
-header, section {
-    min-width: 1170px !important;
+.container a {
+    color: #333;
+    text-decoration: none;
+}
+.container a:visited {
+    color: #333;
+}
+.site-content {
+    min-height: 500px;
+}
+.site-footer {
+    height: 80px;
+    background-color: #ffce23;
+    padding-top: 30px;
+    font-size: 16px;
+}
+header, section, footer {
     overflow: hidden;
 }
+/*
 .bg_1 {
     color: #333;
     height: 760px;
@@ -37,10 +63,6 @@ header, section {
 }
 .col {
     display: inline-block;
-}
-.logo {
-    margin-top: 31px;
-    margin-bottom: 16px;
 }
 .bg_1 img {
     float: left;
@@ -164,15 +186,4 @@ header, section {
     display: inline-block;
     font-family: PTSans-Regular;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+*/
