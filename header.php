@@ -14,7 +14,7 @@
                 </div>
                 <div class="col-sm-8 text-right">
                     <button type="button" class="btn">Войти</button>
-                    <button type="button" class="btn">Зарегистрироваться</button>
+                    <button type="button" class="btn"><a href="/reg">Зарегистрироваться</a></button>
                 </div>
             </div>
         </div>
