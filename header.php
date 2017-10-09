@@ -13,8 +13,8 @@
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
                 </div>
                 <div class="col-sm-8 text-right">
-                    <button type="button" class="btn">Войти</button>
-                    <button type="button" class="btn"><a href="/reg">Зарегистрироваться</a></button>
+                    <a href="/login1"><button type="button" class="btn">Войти</button></a>
+                    <a href="/reg"><button type="button" class="btn">Зарегистрироваться</button></a>
                 </div>
             </div>
         </div>

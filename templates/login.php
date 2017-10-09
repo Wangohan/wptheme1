@@ -1,9 +1,9 @@
 <?php 
 /**
-* Template Name: registration
+* Template Name: login
 */
 get_header(); ?>
     <div class="container site-content">
-        <?php registration_function(); ?>
+        <?php login_function(); ?>
     </div>
 <?php get_footer(); ?>
